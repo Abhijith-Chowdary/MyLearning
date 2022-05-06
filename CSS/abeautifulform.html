@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            width: 500px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        input[type='text'], input[type='password'], select{
+            width: 380px;
+            padding: 10px 5px;
+            outline: none;
+            background-color: #f1f1f1;
+            border: none;
+            border-bottom: 1px silver solid;
+        }
+        textarea{
+            resize: none;
+            background-color: #f1f1f1;
+            border: none;
+            border-bottom: 1px silver solid;
+            outline: none;
+        }
+        input[type='submit']{
+            background-color: brown;
+            color: white;
+            border: none;
+            width: 380px;
+            padding: 10px 0;
+            outline: none;
+        }
+        input[type='submit']:hover{
+            background-color: silver;
+            color: black;
+            font-weight: bold;
+        }
+        input[type='text']:focus, input[type='password']:focus, select:focus{
+            background-color: lightblue;
+        }
+        input[type='text']:hover, input[type='password']:hover, select:hover, textarea:hover{
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Fill the Form</h2><hr>
+        <table>
+            <tr>
+                <td><label for="user">User Name</label></td>
+                <td><input type="text" name="user" id="user"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" name="pass" id="pass"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>Male: <input type="radio" name="gender" value="male"> | Female: <input type="radio" name="gender"
+                    value="female"></td>
+            </tr>
+            <tr>
+                <td><label>Skills</label></td>
+                <td>HTML: <input type="checkbox" name="html" value="html"> | CSS: <input type="checkbox" name="css"
+                    value="css"> | PHP: <input type="checkbox" name="php" value="php"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Select your country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="">select your country</option>
+                        <option value="ind">India</option>
+                        <option value="sl">Sri Lanka</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments</label></td>
+                <td><textarea id="comments" cols="50" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Click to submit" name="submit_form"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

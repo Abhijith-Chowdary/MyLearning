@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        var computer = {model: 2022, type: 'laptop', ram: '6GB', hdd: '600GB'};
+        var mobile = new Object();
+            mobile.model = 2022;
+            mobile.type = 'Touch';
+            mobile.ram = '6GB';
+            mobile.space = '128GB';
+        document.write(computer.model + '<br>');
+        document.write(computer['type'] + '<br>');
+        document.write('I\'m buying a ' + computer.model + ' model computer with ' + computer.ram + ' ram, with ' + computer.hdd + ' hard disk. This computer will be the Laptop, not the desktop.<br>');
+        document.write('I have the ' + mobile.type + ' mobile which have a ram size of ' + mobile.ram + ' with ' + mobile.space + ' storage.<br>');
+        computer.model = 2023;
+        document.write(computer.model + '<br>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write('I\'m from External File.');

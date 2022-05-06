@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Text</title>
+    <style>
+        #div1{
+            background-color: orange;
+            border: 1px solid black;
+            width: 200px;
+            margin: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        #div2{
+            background-color: orange;
+            border: 1px solid black;
+            width: 200px;
+            margin: 10px;
+            word-wrap: break-word;
+        }
+        #div3{
+            background-color: orange;
+            border: 1px solid black;
+            width: 200px;
+            margin: 10px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">The Text, The basic text without any meaning just for learning!</div>
+    <div id="div2">The Text, The basic text withoutanymeaningjustforlearning!</div>
+    <div id="div3">The Text, The basic text withoutanymeaning justforlearning!</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    #header{
+        background-color: brown;
+        width: 1180px;
+        padding: 20px 10px;
+        color: white;
+    }
+    #nav{
+        background-color: orange;
+        width: 1200px;
+    }
+        #nav ul{
+            list-style: none;
+        }
+            #nav ul li{
+                float: left;
+                width: 240px;
+                padding: 15px 0;
+                text-align: center;
+
+            }
+            #nav ul li:hover{
+                background-color: #ffd280;
+                color: brown;
+            }
+            #nav a{
+                color: black;
+            }
+    #middle{}
+        #left{
+            width: 800px;
+            height: 600px;
+            float: left;
+        }
+            .post{
+                margin: 20px;
+            }
+                .title{
+                    background-color: brown;
+                    padding: 15px 10px;
+                    color: white;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                .description{
+                    background-color: #f1f1f1;
+                    padding: 20px;
+                }
+        #right{
+            width: 360px;
+            height: 600px;
+            float: left;
+            padding: 20px;
+        }
+            #right h2{
+                text-align: center;
+            }
+            #latest_post_group{
+                margin: 10px 0;
+            }
+                .latest_post{
+                    background-color: brown;
+                    padding: 10px 0;
+                    color: white;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+            #news_letter{
+
+            }
+                .news_letter_head{
+                    text-align: center;
+                    font-size: 25px;
+                }
+                input[type='text']{
+                    width: 355px;
+                    height: 30px;
+                }
+                input[type='submit']{
+                    margin: 10px 0;
+                    width: 355px;
+                    background-color: orange;
+                    color: black;
+                    padding: 10px 0;
+                    border: none;
+                    font-size: 20px;
+                }
+                input[type='submit']:hover{
+                    background-color: brown;
+                    color: white;
+                }
+    #footer{
+        background-color: brown;
+        width: 1200px;
+        padding: 20px 0;
+        color: white;
+        text-align: center;
+    }

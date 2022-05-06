@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions</title>
+</head>
+<body>
+    <script>
+        var arr_1 = ['Apple', 'Mango', 'Banana', 'Grapes'];
+        document.write(arr_1.length + '<br>');
+        arr_1[arr_1.length] = 'Orange';
+        document.write(arr_1 + '<br>');
+        arr_1.push('Pineapple');
+        document.write(arr_1 + '<br>');
+        arr_1.unshift('Blackberry'); // unshift adds the element at the starting
+        document.write(arr_1 + '<br>');
+        arr_1.pop();
+        document.write(arr_1 + '<br>');
+        arr_1.shift(); // unshift removes the element from the starting
+        document.write(arr_1 + '<br>');
+        delete arr_1[3];
+        document.write(arr_1 + '<br>');
+        arr_1.splice(2, 0, 'Lemon', 'Guava');
+        document.write(arr_1 + '<br>');
+        // to delete we use arr_1.splice(starting index of an element, number of elements to delete from the selected starting index)
+        arr_1.splice(2, 1);
+        document.write(arr_1 + '<br>');
+    </script>
+</body>
+</html>

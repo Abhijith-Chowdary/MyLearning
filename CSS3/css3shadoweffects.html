@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Shadow Effects</title>
+    <style>
+        #div1{
+            background-color: orange;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 100px;
+            float: left;
+            font-size: 20px;
+            color: red;
+            /*text-shadow: to-right to-bottom glow color;*/
+            text-shadow: 2px 2px 0 black, 5px 5px 0 yellow, 9px 9px 0 antiquewhite;
+            box-shadow: 5px 5px 5px red;
+        }
+        #div2{
+            background-color: orange;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 100px;
+            float: left;
+            font-size: 20px;
+            color: red;
+            /*text-shadow: to-right to-bottom glow color;*/
+            text-shadow: 0 0 5px black, 0 0 7px yellow, 0 0 9px antiquewhite;
+            box-shadow: 0 0 5px red;
+        }
+        #div3{
+            background-color: white;
+            margin: 10px;
+            padding: 100px;
+            float: left;
+            font-size: 20px;
+            color: white;
+            /*text-shadow: to-right to-bottom glow color;*/
+            text-shadow: 0 0 5px black, 0 0 7px yellow, 0 0 9px antiquewhite;
+            box-shadow: 0 4px 20px yellow;
+        }
+        #div4{
+            background-color: white;
+            margin: 10px;
+            padding: 100px;
+            float: left;
+            font-size: 20px;
+            color: white;
+            /*text-shadow: to-right to-bottom glow color;*/
+            text-shadow: 0 0 5px black, 0 0 7px yellow, 0 0 9px antiquewhite;
+            box-shadow: 0 4px 20px yellow inset;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">The Text</div>
+    <div id="div2">The Text</div>
+    <div id="div3">The Text</div>
+    <div id="div4">The Text</div>
+</body>
+</html>

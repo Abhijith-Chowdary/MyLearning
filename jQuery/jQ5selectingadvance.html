@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selecting Advance</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#div1').click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1" style="background: orange; width: 300px; height: 150px;">Click to Hide</div><hr>
+    <div id="div2" style="background: red; width: 300px; height: 150px;"></div><hr>
+</body>
+</html>

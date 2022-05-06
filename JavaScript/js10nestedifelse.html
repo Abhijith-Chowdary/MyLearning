@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested If Else</title>
+</head>
+<body>
+    <script>
+        var computer = 'yes',
+            laptop = 'yes',
+            model = 2021,
+            ram = '8GB',
+            hdd = '1TB';
+
+        if(computer == 'yes'){
+            if(laptop == 'yes'){
+                if(model == 2021){
+                    if(ram == '8GB'){
+                        if(hdd == '1TB'){
+                            document.write('<h2 style="color: orange;">Yes, we have all what you need! :)</h2>');
+                        }
+                    }else{
+                        document.write('Sorry, we have the 2021 model but no ram as you want!');
+                    }
+                }else{
+                    document.write('Sorry, we have laptops but we only have old models!');
+                }
+            }else{
+                document.write('This is the computer shop, but sorry for the laptops!');
+            }
+        }else{
+            document.write('Sorry, we don\'t have computers.')
+        }
+    </script>
+</body>
+</html>

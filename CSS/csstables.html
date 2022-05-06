@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tables</title>
+    <style>
+        table{
+            width: 800px;
+            height: 200px;
+        }
+        table, th, td{
+            /*border: 1px solid black;*/
+            border-bottom: 1px solid silver;
+            border-collapse: collapse;
+        }
+        td, th{
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+        }
+        tbody tr:hover{
+            background-color: silver;
+        }
+        thead tr{
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Teacher Name</th>
+                <th>Contact no</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Abhijith</td>
+                <td>Bhushan</td>
+                <td>Swathi</td>
+                <td>1325543621</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Leepika</td>
+                <td>Bhushan</td>
+                <td>Hemalatha</td>
+                <td>1325223143</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Narayana</td>
+                <td>Ranga rao</td>
+                <td>Madhuri</td>
+                <td>1327612621</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

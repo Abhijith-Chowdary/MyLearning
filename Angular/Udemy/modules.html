@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules, making your own directive</title>
+    <script src=""></script>
+</head>
+<body>
+    <div ng-app="module1">
+        <div my-Dir></div>
+    </div>
+        
+    <script>
+        var mod1 = angular.module('module1', []);
+        // we must use the camel style to declare the directive name
+        mod1.directive('myDir', function(){
+            return {
+                template: 'this is the newly created Directive!'
+            };
+        });
+    </script>
+</body>
+</html>

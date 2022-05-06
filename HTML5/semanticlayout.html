@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            background-color: silver;
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        header{
+            background-color: brown;
+            width: 1200px;
+            height: 80px;
+        }
+        nav{
+            background-color: orange;
+            width: 1200px;
+            height: 50px;
+        }
+        section{
+            background-color: gray;
+            width: 900px;
+            height: 400px;
+            float: left;
+        }
+        section header{
+            background-color: none;
+            width: 0;
+            height: 0;
+        }
+        aside{
+            background-color: green;
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+        footer{
+            background-color: brown;
+            width: 1200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header></header>
+        <nav></nav>
+        <main>
+            <section>
+                <header></header>
+                <article></article>
+            </section>
+            <aside></aside>
+            <div style="clear:both;"></div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
